@@ -32,34 +32,36 @@ public class CalculadoraUI {
 				System.out.print("Opção: ");
 				opcao = input.nextInt();
 
-				if (opcao == 0)
+				if (opcao == 0) {
+					
 					continue;
+				}
 
 				switch (opcao) {
 
-				case 1:
-					obterValores();
-					resultado = calcService.somar(x, y);
-					break;
-
-				case 2:
-					obterValores();
-					resultado = calcService.subtrair(x, y);
-					break;
-
-				case 3:
-					obterValores();
-					resultado = calcService.multiplicar(x, y);
-					break;
-
-				case 4:
-					obterValores();
-					resultado = calcService.dividir(x, y);
-					break;
-
-				default:
-					System.out.println("Opção inválida.");
-					continue;
+					case 1:
+						obterValores();
+						resultado = calcService.somar(x, y);
+						break;
+	
+					case 2:
+						obterValores();
+						resultado = calcService.subtrair(x, y);
+						break;
+	
+					case 3:
+						obterValores();
+						resultado = calcService.multiplicar(x, y);
+						break;
+	
+					case 4:
+						obterValores();
+						resultado = calcService.dividir(x, y);
+						break;
+	
+					default:
+						System.out.println("Opção inválida.");
+						continue;
 				}
 
 				System.out.println("Resultado = " + resultado);
